@@ -48,7 +48,7 @@ function addToCart() {
 
   // Function to add items to the cart
   function addToCart() {
-    // ... (existing code)
+
 
     // Update the sidebar to display the cart information
     updateCartDisplay();
