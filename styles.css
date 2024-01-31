@@ -1,0 +1,259 @@
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('path/to/centurygothic.ttf') format('truetype');
+    /* Replace 'path/to/centurygothic.ttf' with the actual path to your font file */
+}
+
+footer {
+    /* Other styles remain unchanged */
+    position: relative;
+    /* Set the position to relative to make absolute positioning relative to this element */
+    bottom: 0;
+    /* Position the footer at the bottom */
+    width: 100%;
+    /* Set the width to 100% to stretch across the viewport */
+    text-align: center;
+}
+body {
+    font-family: 'Century Gothic', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    /* Set your preferred background color */
+    color: #333;
+    /* Set your preferred text color */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+
+    /* Set your preferred header background color */
+    font-family: 'Arial', sans-serif;
+    padding: 15px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+    flex: 1;
+    /* Allow content to wrap on smaller screens */
+}
+
+section,
+aside {
+    flex-basis: 100%;
+    /* Take full width on smaller screens */
+    margin-bottom: 20px;
+}
+
+/* Updated styles for the sidebar and main content */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+section,
+aside {
+    flex-basis: 30%;
+    /* Set the sidebar to take up 30% of the width */
+    margin-bottom: 20px;
+}
+
+#content-section {
+    flex-basis: 65%;
+    justify-content: flex-start;
+    /* Set the main content to take up 65% of the width */
+}
+
+/* Updated styles for the sidebar */
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #e6e6e6;
+    /* Set your preferred sidebar background color */
+    padding: 15px;
+    /* Add padding for better spacing */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+    flex-basis: 20%;
+    /* Set the sidebar to take up 20% of the width */
+}
+
+#sidebar h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar li {
+    cursor: pointer;
+    margin-bottom: 8px;
+    /* Set your preferred text color for links */
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Adjust the styles for the color options buttons */
+#sidebar button {
+    display: inline-block;
+    /* Display buttons in a line */
+    margin-top: 10px;
+    margin-right: 10px;
+    /* Add some spacing between buttons */
+    padding: 8px 16px;
+    background-color: #7a7a7a;
+    /* Set your preferred button background color */
+    color: white;
+    /* Set your preferred button text color */
+    border: none;
+    cursor: pointer;
+}
+
+#sidebar button:hover {
+    background-color: #ffffff;
+    color: #333;
+    /* Change the button color on hover */
+}
+/* Adjust the styles for the color options buttons */
+#product-details button {
+    display: inline-block;
+    /* Display buttons in a line */
+    margin-top: 10px;
+    margin-right: 10px;
+    /* Add some spacing between buttons */
+    padding: 8px 16px;
+    background-color: #7a7a7a;
+    /* Set your preferred button background color */
+    color: white;
+    /* Set your preferred button text color */
+    border: none;
+    cursor: pointer;
+}
+
+#product-details button:hover {
+    background-color: #ffffff;
+    color: #333;
+    /* Change the button color on hover */
+}
+/* Updated styles for the product info */
+.product-info {
+    display: flex;
+    align-items: center;
+}
+
+/* Adjust the styles for the product image */
+#product-image {
+    width: 100%;
+    /* Make the image take up 100% of its container's width */
+    max-height: 80vh;
+    /* Set a maximum height to prevent the image from becoming too large */
+    object-fit: contain;
+    /* Maintain aspect ratio while fitting within the container */
+}
+
+#product-details {
+    font-size: 18px;
+    width: 60%;
+    /* Adjust the width of the product details text */
+}
+
+/* Add styles for the cart display */
+#cart-display {
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.cart-card {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Initial light mode styles */
+body {
+    font-family: 'Century Gothic', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    padding: 15px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+/* Dark mode styles */
+
+
+header.dark-mode {
+    background-color: #4a4a4a;
+    color: #ffffff;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #333;
+    color: #ffffff;
+}
+
+header.dark-mode {
+    background-color: #4a4a4a;
+    color: #ffffff;
+}
+
+aside.dark-mode{
+    color: #fff;
+}
+
+
+/* Cart display styles in dark mode */
+#cart-display {
+    padding: 15px;
+    /* Set your preferred dark background color */
+    color: #ffffff;
+    /* Set your preferred text color in dark mode */
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.cart-card {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #333;
+    /* Set your preferred text color in dark mode */
+}

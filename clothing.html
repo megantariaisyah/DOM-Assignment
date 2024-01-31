@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Product Detail</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>ARITZIA</h1>
+    </header>
+
+    <nav>
+        <a href="#">SALE</a>
+        <a href="#">NEW</a>
+        <a href="#">BEST SELLER</a>
+    </nav>
+
+    <main>
+        <section id="content-section">
+            <div class="product-info">
+                <img src="/assets/B.jpg" alt="Product Image" id="product-image">
+                <div id="product-details">
+                    <h2>Product Name</h2>
+                    <p>Price: $49.99</p>
+                    <p>Size: <select>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                        </select>
+                    </p>
+                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+
+<aside id="sidebar">
+    <h2 class="dark-mode-text">Color Collection</h2>
+
+<!-- Add a color options button in the sidebar -->
+<button onclick="changeProductColor(0)">Black</button>
+<button onclick="changeProductColor(1)">Gray</button>
+<button onclick="changeProductColor(2)">White</button>
+<button onclick="changeColorScheme()">Change Color Scheme</button>
+
+<!-- Add a container for the cart display in the sidebar -->
+<div id="cart-display"></div>
+</aside>
+
+    <footer>
+        © 2024 Aritzia LP - Aisyah's Assignment
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
